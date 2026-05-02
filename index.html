@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abdo Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>Abdo Code</h2>
+  <button onclick="showLogin()">Login</button>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Learn Programming</h1>
+    <p>Start your journey from zero to professional 🚀</p>
+    <button>Start Now</button>
+  </div>
+</section>
+
+<!-- Courses -->
+<section class="courses">
+  <h2>Courses</h2>
+  <div id="courseList"></div>
+</section>
+
+<!-- Login Popup -->
+<div class="login-box" id="loginBox">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
