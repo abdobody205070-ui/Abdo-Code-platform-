@@ -1,51 +1,74 @@
-
 body {
-  font-family: Arial;
-  background: #f5f5f5;
   margin: 0;
+  font-family: Arial;
 }
 
-header {
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
   background: #111;
   color: white;
-  text-align: center;
-  padding: 15px;
 }
 
-.dashboard {
-  background: white;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1518770660439-4636190af475") no-repeat center;
+  background-size: cover;
+  position: relative;
 }
 
-.dashboard input {
-  padding: 10px;
-  margin: 5px;
-  width: 200px;
-}
-
-button {
-  padding: 10px 15px;
-  background: #007bff;
+.overlay {
+  background: rgba(0,0,0,0.7);
+  height: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  font-size: 50px;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  background: #00bcd4;
   border: none;
+  color: white;
   cursor: pointer;
 }
 
+/* Courses */
 .courses {
-  margin: 20px;
+  padding: 20px;
 }
 
 .card {
-  background: white;
+  background: #f5f5f5;
   padding: 15px;
-  margin-bottom: 10px;
+  margin: 10px;
   border-radius: 10px;
 }
 
-.card a {
+/* Login */
+.login-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  display: none;
+  border-radius: 10px;
+}
+
+.login-box input {
   display: block;
-  margin-top: 10px;
-  color: blue;
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
 }
