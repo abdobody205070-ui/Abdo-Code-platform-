@@ -1,9 +1,3 @@
-function startNow() {
-    window.scrollTo({
-        top: document.getElementById('courses').offsetTop - 80,
-        behavior: 'smooth'
-    });
-}
 // فتح وإغلاق قائمة التسجيل
 const modal = document.getElementById("loginModal");
 const btn = document.querySelector(".login-btn");
