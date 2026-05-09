@@ -1,3 +1,6 @@
 function startNow() {
-  alert("Welcome to Abdo Code 🚀 Start your journey!");
+    window.scrollTo({
+        top: document.getElementById('courses').offsetTop - 80,
+        behavior: 'smooth'
+    });
 }
